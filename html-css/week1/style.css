@@ -1,0 +1,193 @@
+@font-face {
+    font-family: myFont1;
+    src: url(BeautifulPeopletwoPersonalUse.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(BeautifulPeoplePersonalUse.ttf)
+}
+
+.shapes {
+    opacity: 0.3;
+    position: absolute;
+    z-index: -1;
+    width: 95vw;
+    height: 150vw;
+}
+
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 3;
+    background-color: rgb(rgb(152, 238, 253));
+
+}
+
+.MyHeader {
+    grid-area: header;
+}
+
+.MyMenu {
+    grid-area: menu;
+    margin-left: 4vw;
+}
+
+.MyMain {
+    grid-area: main;
+    margin-top: 2vw;
+    margin-left: 4vw;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'menu main main'
+        'menu main main';
+    grid-gap: 15px;
+    padding: 20px;
+
+}
+
+.container>div {
+    padding: 2vw;
+}
+
+#MyPic {
+    width: 150px;
+    border-radius: 50px;
+    margin-top: 4vw;
+}
+
+#CV-Header {
+    text-align: center;
+
+}
+
+#MyName {
+    font-family: myFont1;
+    color: darkslategray;
+    font-size: 3.5vw;
+    letter-spacing: 4px;
+}
+
+#MyProfile {
+    margin-top: 2%;
+    font-size: 2vw;
+}
+
+#address {
+    border-left: 4px solid gray;
+    border-right: 4px solid gray;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.MyMenu {
+    text-align: center;
+    font-family: 'myFont1', sans-serif;
+    font-size: 2.5vw;
+    letter-spacing: 4px;
+}
+
+.skills-langs {
+    font-size: 2.5vw;
+}
+
+#languages {
+    margin-top: 100px;
+}
+
+.Persian {
+    width: 100%
+}
+
+.English {
+    width: 40%;
+}
+
+.Danish {
+    width: 10%;
+}
+
+.left {
+    margin-right: 3vw;
+    font-size: 1.5vw;
+}
+
+.right {
+    margin-left: 3vw;
+    font-size: 1.5vw;
+}
+
+.menuItems {
+    font-family: fantasy, Courier, monospace;
+    font-size: 2vw;
+    text-align: center;
+
+}
+
+.myProgress {
+    width: 100%;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.myBar {
+    background-color: black;
+    height: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.Csharp {
+    width: 40%;
+}
+
+.VB {
+    width: 30%;
+}
+
+.HtmlCss {
+    width: 20%;
+}
+
+.SqlServer {
+    width: 20%;
+}
+
+.fas {
+    margin-right: 2vw
+}
+
+/*this a class for the main*/
+.CVmain {
+    border-left: 4px solid gray;
+    padding: 3vw;
+}
+
+.mainProfile {
+
+
+    font-size: 1.5vw;
+
+}
+
+.workExp {
+    position: absolute;
+    left: 35.7vw;
+    color: gray;
+    font-size: 2vw;
+}
+
+.jobTitle {
+    font-size: 1.7vw;
+}
+
+.Companies {
+    color: darkturquoise;
+}
