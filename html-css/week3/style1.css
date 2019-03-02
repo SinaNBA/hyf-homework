@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+form {
+
+    border: 2px solid grey;
+    padding: 3vw;
+    width: 80%;
+    margin: 30px 0 30px 0;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+
+}
+
+img {
+    margin: 10px;
+    width: 150px;
+
+
+}
+
+.navbar {
+
+    background-color: grey;
+    line-height: 50px;
+    align-self: center;
+    margin: 10px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 26px 20px;
+}
+
+a.navbarLink:hover {
+    background-color: black;
+    line-height: 50px;
+}
+
+p {
+    width: 80%;
+    font-size: 18px;
+}
+
+
+.progress {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.level {
+    background-color: rgb(156, 152, 152);
+
+    height: 40px;
+    border: 1px solid grey;
+}
+
+.step1 {
+    width: 20%;
+}
+
+.step2 {
+    width: 40%;
+}
+
+.step3 {
+    width: 60%;
+}
+
+.step4 {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 10vw;
+    margin: 60px 0 60px 0;
+
+
+}
+
+.text {
+    width: 17vw;
+    margin: 10px;
+    height: 30px;
+
+}
+
+#email {
+    margin-left: 55px;
+
+}
+
+.shippingCheckbox {
+    margin-bottom: 7vw;
+}
+
+#sshipping_address {
+    width: 15px;
+    height: 15px;
+    margin: 0 0 0 5px;
+}
+
+.select {
+    padding: 12px 20px;
+    width: 17vw;
+    margin: 8px 0 0 27px;
+
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    height: 16vw;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.descriptionParagraph {
+    font-size: 45%;
+    font-style: italic;
+    width: 14%;
+    margin: 20px 5px 5px 2px;
+    line-height: 90%;
+
+}
+
+.profile_description {
+    width: 70%;
+}
+
+.nextStep {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    color: white;
+
+    height: 70px;
+    border: none;
+    border-radius: 4px;
+
+
+    text-align: center;
+}
+
+.nextStepLink {
+    padding: 14px 20px;
+    line-height: 40px;
+    background-color: grey;
+    cursor: pointer;
+
+}
+
+
+.radioContainer {
+    display: flex;
+    margin: 10px;
+
+
+}
+
+.radio {
+    border: 2px solid gray;
+    display: flex;
+    padding: 1px 5px 12px 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+    height: 35px;
+
+}
+
+.checkboxContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;
+    width: 50%;
+    margin: 0 0 20px 0;
+
+
+}
+
+.checkbox {
+    width: 50px;
+    height: 30px;
+    margin-left: 5px;
+
+}
+
+.checkboxImagesContainer {
+    display: flex;
+    width: 60%;
+    height: 500px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 20px 5px 40px 5px;
+    overflow: scroll;
+}
+
+.images {
+    width: 150px;
+    height: 150px;
+}
+
+.cvv-date-card {
+    width: 30%;
+}
+
+.cvv-date-card_text {
+    width: 45px;
+}
+
+@media only screen and (max-width:620px) {
+
+    /* For mobile phones: */
+    .form1 {
+        width: 100%;
+
+    }
+
+
+
+
+}
