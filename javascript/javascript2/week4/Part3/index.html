@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Part3</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success">
+                <h1>Spirit animal name generator!!!</h1>
+            </li>
+            <li class="list-group-item list-group-item-secondary">
+                <h5>If you want to see your spirit animal name please write your firstname</h5>
+            </li>
+
+            <li class="list-group-item list-group-item-info">
+                <h3>Before you type your name please select one of these options!</h3>
+            </li>
+            <li class="list-group-item list-group-item-warning"> <label onclick="spiritAnimalMakerBtn()"
+                    for="optionsForHtml-btn">When I click on
+                    button</label>
+                <input type="radio" onclick="if(this.checked){spiritAnimalMakerBtn()}" name="optionsForHtml"
+                    id="optionsForHtmlBtn" checked></li>
+            <li class="list-group-item list-group-item-danger"> <label onclick="spiritAnimalMakerHover()"
+                    for="optionsForHtml-hover">When I hovers the
+                    input field</label>
+                <input type="radio" onclick="if(this.checked){spiritAnimalMakerHover()}" name="optionsForHtml"
+                    id="optionsForHtmlHover"></li>
+            <li class="list-group-item list-group-item-primary"> <label onclick="spiritAnimalMakerWritten()"
+                    for="optionsForHtml-written">When I written in
+                    the input field</label>
+                <input type="radio" onclick="if(this.checked){spiritAnimalMakerWritten()}" name="optionsForHtml"
+                    id="optionsForHtmlWritten"></li>
+
+            <li class="list-group-item list-group-item-dark"> <input type="text" name="spiritAnimal-btn"
+                    id="spiritAnimalInput">
+
+                <button id="btn" onclick="spiritAnimalMaker()">Push me!</button></li>
+            <li class="list-group-item list-group-item-light">
+                <h3 id="spiritAnimal">Your spirit animal name ;-)</h3>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
