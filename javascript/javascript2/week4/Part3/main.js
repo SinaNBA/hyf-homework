@@ -10,7 +10,7 @@ function spiritAnimalMakerBtn() {
 function spiritAnimalMakerHover() {
     if (document.getElementById("optionsForHtmlHover").checked == false) {
         document.getElementById("optionsForHtmlHover").checked = true;
-    }
+    }debugger;
     document.getElementById("btn").disabled = true;
     document.getElementById("spiritAnimalInput").setAttribute("onmouseover", "spiritAnimalMaker()");
 }
