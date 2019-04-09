@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The fastest presser in this realm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="countainer">
+        <div>
+            <h1 style="text-align: center; margin: 20px;font-size: 70px ; font-family: myFirstFont; ">Fastest Presser</h1>
+        </div>
+        <div style="text-align: center;margin: 10px;">
+            <label for="secs" style="font-family:cursive ;width: 100%;font-size: 20px">Please set the time(Seconds) then press the
+                Button!</label>
+            <input style="width:250px" placeholder="Enter a number between 1-10" type="text" name="secs"
+                id="secondsInput">
+        </div>
+        <div style="text-align: center;margin: 10px;">
+            <button class="btn btn-primary btn-lg" onclick="forCallsecForPlay()">Click!</button>
+        </div>
+        <div style="text-align: center;margin: 10px;">
+            <button class="btn btn-warning" onclick="resetGame()">Reset!</button>
+        </div>
+        <div class="d-flex mb-3" style="border-top: 2px solid black; ">
+            <div id="rightSide" class="p-2 flex-fill bg-info" style="border-right: 2px solid black;height: 500px;">
+                <h1 class="animH1">
+                    <span>P</span>
+                    <span>r</span>
+                    <span>e</span>
+                    <span>s</span>
+                    <span>s</span>
+                    <span>&nbsp;L</span><br>
+                    <p id="counter1Id" class="counter1"></p>
+
+                </h1>
+
+            </div>
+            <div id="leftSide" class="p-2 flex-fill bg-warning" style="height: 500px">
+                <h1 class="animH2">
+                    <span>P</span>
+                    <span>r</span>
+                    <span>e</span>
+                    <span>s</span>
+                    <span>s</span>
+                    <span>&nbsp;S</span><br>
+                    <p id="counter2Id" class="counter2"></p>
+
+                </h1>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
