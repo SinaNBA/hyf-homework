@@ -2,9 +2,6 @@ const counter = document.querySelector('body');
 const log1 = document.getElementById('counter1Id');
 const log2 = document.getElementById('counter2Id');
 
-
-
-
 function resetGame() {
     log1.innerHTML = "";
     log2.innerHTML = "";
@@ -14,10 +11,6 @@ function resetGame() {
     counter.removeEventListener('keypress', logKey);
 }
 
-
-
-
-
 function forCallsecForPlay() {
     i = 1;
     j = 1;
@@ -26,7 +19,6 @@ function forCallsecForPlay() {
     if (seconds.value > 0 && seconds.value < 11) {
         seconds = seconds.value * 1000;
         secForPlay(seconds);
-
     } else {
         alert('Enter a number between 1-10 !!!');
     }
@@ -38,19 +30,17 @@ function logKey(e) {
     } else if (e.code == 'KeyS') {
         log2.innerHTML = j++;
     }
-
 }
 
 function secForPlay(secs) {
-
     setTimeout(function () {
         if (parseInt(log1.innerHTML) > parseInt(log2.innerHTML)) {
             document.getElementById('leftSide').setAttribute("class", "p-2 flex-fill bg-info winner");
         } else if (parseInt(log1.innerHTML) < parseInt(log2.innerHTML)) {
             document.getElementById('rightSide').setAttribute("class", "p-2 flex-fill bg-warning winner");
         } else if (parseInt(log1.innerHTML) === parseInt(log2.innerHTML)) {
-            alert('Draw!!')
+            alert('Draw!!');
+            resetGame();
         }
-
     }, secs)
 }
