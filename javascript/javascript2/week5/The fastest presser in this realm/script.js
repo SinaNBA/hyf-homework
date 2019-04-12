@@ -14,10 +14,10 @@ function resetGame() {
 function forCallsecForPlay() {
     i = 1;
     j = 1;
-    counter.addEventListener('keypress', logKey);
     var seconds = document.getElementById('secondsInput');
     if (seconds.value > 0 && seconds.value < 11) {
         seconds = seconds.value * 1000;
+        counter.addEventListener('keypress', logKey);
         secForPlay(seconds);
     } else {
         alert('Enter a number between 1-10 !!!');
