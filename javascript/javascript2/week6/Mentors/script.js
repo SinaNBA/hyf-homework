@@ -1,4 +1,4 @@
-console.log(mentors);
+// console.log(mentors);
 
 let modifiedMentors = mentors.map(function (mentor) {
     if (mentor["name"].length > 10) {
@@ -21,6 +21,8 @@ function filterMentorList(courseID) {
         return sub.indexOf(courseID) >= 0;
     });
 
+
+
     filteresListByCourseId.forEach(function (mentor) {
 
         listHtml += `<div>  ${mentor.name} </div>`;
@@ -28,10 +30,9 @@ function filterMentorList(courseID) {
     });
 
     resultHtml.innerHTML = listHtml;
-    console.log('courseID', resultHtml);
+    // console.log('courseID', resultHtml);
 
 }
-
 
 // mentors.forEach(mentor => listHtml += `<div>Mr ${mentor.name } </div>`);
 // mentors.forEach(function (mentor) {
