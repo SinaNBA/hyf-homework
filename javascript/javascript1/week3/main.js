@@ -1,21 +1,21 @@
 //Item array removal
 
-const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const randomNumber = parseInt(Math.random() * 11);
+const names = ['Peter', 'Ahmad', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrine', 'Tala'];
+const nameToRemove = 'Ahmad';
 
-function removeArrayItem(numbersToRemove) {
-    for (var i = 0; i < numbersArray.length; i++) {
-        if (numbersArray[i] === numbersToRemove) {
-            delete numbersArray[i];
-            return numbersToRemove + " have been removed!";
+function removeArrayItem(itemToRemove) {
+    for (var i = 0; i < names.length; i++) {
+        if (names[i] === itemToRemove) {
+            delete names[i];
+            return itemToRemove + " have been removed!";
         }
     }
-    return numbersToRemove + " not in the list!";
+    return itemToRemove + " not in the list!";
 
 
 }
 
-console.log(removeArrayItem(randomNumber));
+console.log(removeArrayItem(nameToRemove));
 
 //Series duration of my life
 
@@ -62,14 +62,11 @@ function percentageOfLife() {
     console.log("In total that is " + TotalMinPercent + "% of my life");
 
 }
+console.log(percentageOfLife());
 
 //My favorite songs
 
 const songDatabase = [];
-
-function addSongToDatabase(song) {
-    songDatabase.push(song);
-}
 
 var favSong = {};
 addSongToDatabase(favSong = {
@@ -92,6 +89,10 @@ addSongToDatabase(favSong = {
     title: 'Wish You Were Here',
     artist: 'Pink Floyd'
 });
+
+function addSongToDatabase(song) {
+    songDatabase.push(song);
+}
 
 console.log(songDatabase);
 
@@ -123,7 +124,9 @@ const myPlaylist = [];
 function addSongToMyPlaylist(title) {
     myPlaylist.push(getSongByTitle(title));
 }
-
+for (var i = 0; i < songDatabase.length; i++) {
+    addSongToMyPlaylist(songDatabase[i].title);
+}
 console.log(myPlaylist);
 
 //NOnoN0nOYes (Note taking app)
@@ -160,11 +163,11 @@ console.log(getAllNotes());
 
 function logOutNotesFormatted() {
     for (var i = 0; i < notes.length; i++) {
-        return "The note with id: " + notes[i].id + " , has the following note text: " + notes[i].content + ".";
+        console.log("The note with id: " + notes[i].id + " , has the following note text: " + notes[i].content + ".");
     }
 }
 
-console.log(logOutNotesFormatted());
+logOutNotesFormatted();
 
 //CactusIO-interactive (Smart phone usage app)
 

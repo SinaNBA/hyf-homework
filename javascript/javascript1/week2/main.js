@@ -1,33 +1,4 @@
-//Flight booking fullname function
 
-function getFullname(firstname, surname) {
-    return firstname + " " + surname;
-}
-
-var fullname1;
-var fullname2;
-
-fullname1 = getFullname("Benjamin", "Hughes");
-fullname2 = getFullname("Chris", "Redfill");
-
-console.log(fullname1);
-console.log(fullname2);
-
-//Formal fullname
-
-function getFullnameEx(firstname, surname, useFormalName) {
-    if (useFormalName) {
-        return "Lord" + " " + firstname + " " + surname;
-    } else {
-        return firstname + " " + surname;
-    }
-}
-
-fullname1 = getFullnameEx("Benjamin", "Hughes", true);
-fullname2 = getFullnameEx("Chris", "Redfill", false);
-
-console.log(fullname1);
-console.log(fullname2);
 
 //Event application
 
@@ -38,7 +9,7 @@ function getEventWeekday(event) {
     return weekDays[d.getDay()];
 }
 
-console.log(getEventWeekday(5));
+console.log(getEventWeekday(6));
 
 //Weather wear
 
