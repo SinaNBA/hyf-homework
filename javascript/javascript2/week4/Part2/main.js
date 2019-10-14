@@ -35,12 +35,6 @@ const favBooks = [{
     'author': 'Nikos Kazantzakis',
     'source': 'img/zorba the greek.jpg'
 }, {
-    'id': 'nikos kazantzakis-the last temptation of christ',
-    'title': 'The last temptation of christ',
-    'language': 'Persian',
-    'author': 'Nikos Kazantzakis',
-    'source': 'img/the last temptation of christ.jpg'
-}, {
     'id': 'paulo coelho-brida',
     'title': 'Brida',
     'language': 'Persian',
