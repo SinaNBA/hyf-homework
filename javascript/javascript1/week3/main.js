@@ -1,5 +1,6 @@
 //Item array removal
 
+
 const names = ['Peter', 'Ahmad', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrine', 'Tala'];
 const nameToRemove = 'Ahmad';
 
