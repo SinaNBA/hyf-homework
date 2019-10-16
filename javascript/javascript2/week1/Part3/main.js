@@ -29,6 +29,6 @@ function spiritAnimalMaker() {
     if (name.value === "") {
         document.getElementById("spiritAnimal").innerHTML = "Please enter a name in the textbox!";
     } else {
-        document.getElementById("spiritAnimal").innerHTML = 'Your Name: ' + name.value + ': ' + name.value + ' - ' + spiritAnimalList[randomNum];
+        document.getElementById("spiritAnimal").innerHTML = 'Your Name: ' + name.value + ' | ' + name.value + ' - ' + spiritAnimalList[randomNum];
     }
 }

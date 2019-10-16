@@ -9,6 +9,11 @@ addSongToDatabase(favSong = {
     artist: 'Prince'
 });
 addSongToDatabase(favSong = {
+    songId: 4,
+    title: 'Purple Rain',
+    artist: 'P'
+});
+addSongToDatabase(favSong = {
     songId: 2,
     title: 'Dancing Queen',
     artist: 'ABBA'
@@ -32,18 +37,24 @@ function addSongToDatabase(song) {
 console.log(songDatabase);
 
 function getSongByTitle(title) {
+    const songs = [];
+
     for (var i = 0; i < songDatabase.length; i++) {
         if (songDatabase[i].title === title) {
-            return songDatabase[i];
+            songs.push(songDatabase[i]);
         }
     }
-    return console.log(title + " is not in the list.");
+    if (songs.length > 0) {
+        return songs;
+    } else {
+        return console.log(title + " is not in the list.");
+    }
 }
 
 getSongByTitle("Radio Ga Ga"); //Wrong value
 
 const searchedSong = []; //For solving that problem you mentioned I declared "searchedSong" an array
-searchedSong.push(getSongByTitle('Wish You Were Here'));
+searchedSong.push(getSongByTitle('Purple Rain'));
 console.log(searchedSong);
 
 function getSongByFuzzySearch(title) {
