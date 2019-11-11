@@ -1,9 +1,13 @@
-var logFunnyJoke = function () {
-    alert('Q: How does a tech guy drink coffee?                                                                              A: He installs Java!');
-};
-
-function jokeCreator(shouldTellFunnyJoke, logFJ) {
-    if (shouldTellFunnyJoke === true) {
-        logFJ();
-    }
+var logEarth = function () {
+    return console.log("Earth")
 }
+var logSaturn = function () {
+    return console.log("Saturn")
+}
+
+function thirdFunction(planetLogFunction) {
+    planetLogFunction();
+}
+
+thirdFunction(logEarth);
+thirdFunction(logSaturn);

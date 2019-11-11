@@ -1,6 +1,8 @@
-function userLoc() {
-    navigator.geolocation.getCurrentPosition(function (position) {
-        alert(position.coords.latitude);
-        alert(position.coords.longitude);
-    });
-}
+function secondsToShow(delay, stringToshow) {
+    var stToShow = setTimeout(function () {
+        console.log(stringToshow)
+    }, delay * 1000);
+};
+
+secondsToShow(5, "This string logged after 5 seconds");
+secondsToShow(10, "This string logged after 10 seconds");
