@@ -9,3 +9,5 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=copenhagen&appid=2e25db
         //div1.appendChild(img);
 
     });
+
+    //
