@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .container {
+            text-align: center;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <ul id="imagesUl" class="list-group">
+            <li class="list-group-item list-group-item-warning">
+                <h1>Giphy searcher</h1>
+            </li>
+            <li class="list-group-item list-group-item-success"><input type=" text" id="giphySearch"
+                    name="giphySearchName" placeholder="Search for gif" required></li>
+            <li class="list-group-item list-group-item-secondary"> <input type="button" onclick="searchForGif()"
+                    value="Search for gif"></li>
+            <li class="list-group-item list-group-item-info"> <input type="text" id="giphyNumber" name="giphyNumberName"
+                    placeholder="Number of gifs" required></li>
+        </ul>
+
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
