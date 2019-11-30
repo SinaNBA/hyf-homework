@@ -44,17 +44,8 @@ function weatherFunc() {
                 sunsetH2.innerText = "Sunset: " + sunsetdate;
                 div1.appendChild(sunriseH2);
                 div1.appendChild(sunsetH2);
-                myMap(response.coord.lat, response.coord.lon);
+                
             });
     }
 };
 
-function myMap(lat, lon) {
-    console.log(lat, lon);
-
-    var mapProp = {
-        center: new google.maps.LatLng(lat, lon),
-        zoom: 5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
