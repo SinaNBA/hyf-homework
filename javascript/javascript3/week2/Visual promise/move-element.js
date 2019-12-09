@@ -47,6 +47,7 @@
             setTimeout(() => span.classList.add('shown'), 300);
         }
     }, 10);
+    
 
     function setTargetFulfilled(box, targetBox, fulfilledPosition) {
         const renderedClientBox = box.getBoundingClientRect();

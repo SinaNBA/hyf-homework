@@ -45,11 +45,8 @@ function translateAllAtOnce() {
             console.log("All the Boxes has been moved");
         })
 };
-
-
 //translateAllAtOnce();
-
 
 setTimeout(() => {
     location.reload();
-}, 7000)
+}, 8000)
