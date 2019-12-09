@@ -48,7 +48,6 @@
         }
     }, 10);
     
-
     function setTargetFulfilled(box, targetBox, fulfilledPosition) {
         const renderedClientBox = box.getBoundingClientRect();
 

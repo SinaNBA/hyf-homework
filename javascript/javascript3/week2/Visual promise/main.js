@@ -47,6 +47,6 @@ function translateAllAtOnce() {
 };
 //translateAllAtOnce();
 
-setTimeout(() => {
-    location.reload();
-}, 8000)
+// setTimeout(() => {
+//     location.reload();
+// }, 8000)
