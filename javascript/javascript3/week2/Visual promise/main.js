@@ -28,7 +28,7 @@ function translateOneByOne() {
         })
 };
 
-
+translateOneByOne();
 
 function translateAllAtOnce() {
     Promise.all([moveElement(boxes[0], {
@@ -46,10 +46,10 @@ function translateAllAtOnce() {
         })
 };
 
-translateOneByOne();
+
 //translateAllAtOnce();
 
 
 setTimeout(() => {
     location.reload();
-}, 5000)
+}, 7000)
