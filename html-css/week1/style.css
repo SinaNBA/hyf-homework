@@ -8,36 +8,13 @@
     src: url(BeautifulPeoplePersonalUse.ttf)
 }
 
-.shapes {
-    opacity: 0.3;
-    position: absolute;
-    z-index: -1;
-    width: 95vw;
-    height: 150vw;
-}
-
-
-
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    opacity: 3;
-    background-color: rgb(rgb(152, 238, 253));
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.MyHeader {
-    grid-area: header;
-}
-
-.MyMenu {
-    grid-area: menu;
-    margin-left: 4vw;
-}
-
-.MyMain {
-    grid-area: main;
-    margin-top: 2vw;
-    margin-left: 4vw;
+a:link,
+a:visited {
+    color: #33658a;
 }
 
 .container {
@@ -46,24 +23,18 @@ body {
         'header header header'
         'menu main main'
         'menu main main';
-    grid-gap: 15px;
-    padding: 20px;
-
+    grid-gap: 2px;
 }
 
-.container>div {
-    padding: 2vw;
+.MyHeader {
+    grid-area: header;
+    text-align: center;
+    font-size: 1.5vw;
 }
 
 #MyPic {
     width: 150px;
     border-radius: 50px;
-    margin-top: 4vw;
-}
-
-#CV-Header {
-    text-align: center;
-
 }
 
 #MyName {
@@ -73,12 +44,7 @@ body {
     letter-spacing: 4px;
 }
 
-#MyProfile {
-    margin-top: 2%;
-    font-size: 2vw;
-}
-
-#address {
+.specs {
     border-left: 4px solid gray;
     border-right: 4px solid gray;
     margin-left: 2%;
@@ -87,101 +53,104 @@ body {
     padding-right: 2%;
 }
 
+#emailImg {
+    padding-right: 8px;
+}
+
+#github {
+    border-right: none;
+}
+
 .MyMenu {
+    grid-area: menu;
+    margin-left: 2vw;
     text-align: center;
     font-family: 'myFont1', sans-serif;
-    font-size: 2.5vw;
-    letter-spacing: 4px;
+    font-size: 1.4vw;
 }
 
-.skills-langs {
-    font-size: 2.5vw;
-}
-
-#languages {
-    margin-top: 100px;
-}
-
-.Persian {
-    width: 100%
-}
-
-.English {
-    width: 40%;
-}
-
-.Danish {
-    width: 10%;
-}
-
-.left {
+.circleLeft {
     margin-right: 3vw;
-    font-size: 1.5vw;
 }
 
-.right {
+.circleRight {
     margin-left: 3vw;
-    font-size: 1.5vw;
 }
 
-.menuItems {
-    font-family: fantasy, Courier, monospace;
-    font-size: 2vw;
-    text-align: center;
-
+.menuItems1 {
+    font-size: 1.2vw;
+    background-color: #33658a;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 10px;
 }
 
-.myProgress {
+.menuItems2 {
+    font-weight: bold;
+    font-size: 1.3vw;
     width: 100%;
-    background-color: gray;
-    border-radius: 5px;
 }
 
-.myBar {
-    background-color: black;
-    height: 15px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+.menuItems3 {
+
+    font-size: 1.3vw;
+    font-weight: normal;
+    text-align: left;
 }
 
-.Csharp {
-    width: 40%;
+.more {
+    word-spacing: 0.5vw;
 }
 
-.VB {
-    width: 30%;
+.menuItems4 {
+
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.3vw;
+    width: 100%;
 }
 
-.HtmlCss {
-    width: 20%;
+.university {
+    color: rgb(0, 143, 209);
+    font-weight: bold;
 }
 
-.SqlServer {
-    width: 20%;
+.MyMain {
+    grid-area: main;
 }
 
 .fas {
-    margin-right: 2vw
+    margin-right: 2vw;
+    color: #33658a;
 }
 
-/*this a class for the main*/
-.CVmain {
+/*this is a class for profile and work experience*/
+.mainProfile {
+    font-size: 1.5vw;
     border-left: 4px solid gray;
     padding: 3vw;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
-.mainProfile {
+#header {
+    font-weight: bold;
+}
 
-
-    font-size: 1.5vw;
+#profile {
+    text-align: justify;
+    word-spacing: -1px;
+    line-height: 2vw;
+    text-indent: 20px;
 
 }
 
-.workExp {
-    position: absolute;
-    left: 35.7vw;
-    color: gray;
-    font-size: 2vw;
+.date {
+    padding-left: 18px;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: underline;
+    color: grey;
 }
 
 .jobTitle {
@@ -189,5 +158,5 @@ body {
 }
 
 .Companies {
-    color: darkturquoise;
+    color: rgb(0, 143, 209);
 }
